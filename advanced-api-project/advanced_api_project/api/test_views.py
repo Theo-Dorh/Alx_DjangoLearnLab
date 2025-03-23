@@ -4,6 +4,7 @@ from rest_framework.test import APITestCase
 from django.contrib.auth.models import User
 from rest_framework import status
 from .models import Book
+from rest_framework.permissions import IsAuthenticated
 
 class BookAPITestCase(APITestCase):
     def setUp(self):
